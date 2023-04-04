@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+input[type=range] {
+  width: 50%;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+#game {
+  margin-top: 20px;
+  font-size: 2em;
+  color: #333;
+  display: inline;
+  position: relative;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+#game span {
+  color: grey;
+}
+
+#game span.current {
+  color: red;
+}
+
+#game span.correct {
+  color: green;
+}
+
+#game span.wrong {
+  color: black;
+  text-decoration: line-through;
+}
+
+#game span.incorrect {
+  color: red;
+  text-decoration: line-through;
+}
+/* Modal Box for Highscore*/
+
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+}
+
+.modal-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.modal-header h2 {
+margin: 0;
+}
+
+.modal-close {
+font-size: 1.5em;
+font-weight: bold;
+color: #aaa;
+cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-options {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.modal-option {
+margin-bottom: 20px;
+width: 45%;
+}
+
+.modal-option h3 {
+margin: 0;
+margin-bottom: 10px;
+}
+
+.modal-option ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.modal-option ul li {
+margin-bottom: 5px;
+}
+
+.modal-button {
+margin-top: 20px;
+padding: 10px;
+font-size: 1.2em;
+background-color: #4CAF50;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.modal-button:hover {
+background-color: #3e8e41;
+}
