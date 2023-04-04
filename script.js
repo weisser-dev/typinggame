@@ -25,6 +25,8 @@ function startGame() {
   // Clear previous game and result
   document.getElementById("game").innerHTML = "";
   document.getElementById("result").innerHTML = "";
+  document.getElementById("timeLabel").innerHTML = "Remaining Time: ";
+  document.getElementById("time").innerHTML = "15";
 
   // Set up game
   score = 0;
@@ -32,6 +34,11 @@ function startGame() {
   currentSentence = getRandomSentence();
   displaySentence();
   timer = setInterval(playGame, 1000);
+
+  // Hide Button & Slider
+  document.getElementById("timeRange").style.display = "none";
+  document.querySelector("button").style.display = "none";
+  document.getElementById("game").style.display = "inline";
 }
 
 function getRandomSentence() {
@@ -128,6 +135,13 @@ function endGame() {
   const errors = currentSentence.length - currentIndex;
   const accuracy = ((currentIndex - errors) / currentIndex) * 100;
   const cpm = (typedLetters / timerValue) * 60;
+
+  // Show Button & Range Slider
+  // Hide Button & Slider
+  document.getElementById("timeRange").style.display = "inline";
+  document.querySelector("button").style.display = "inline";
+  document.getElementById("game").style.display = "none";
+  document.getElementById("timeLabel").innerHTML = "Time Limit: ";
 
   // Create modal content
   const modalContent = document.createElement("div");
