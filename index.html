@@ -2,19 +2,28 @@
 <html>
   <head>
     <title>Typing Game</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Typing Game</h1>
-    <p>Time Limit: <span id="time">15</span> seconds</p>
-    <input type="range" id="timeRange" name="timeRange" min="15" max="600" value="15">
-    <br>
-    <button onclick="startGame()">Start Game</button>
-    <br>
-    <div id="game" style="display: inline;"></div>
-    <div id="result"></div>
+    <div id="gameWrapper">
+      <h1>Typing Game</h1>
+      <p>Time Limit: <span id="time">15</span> seconds</p>
+      <input
+        type="range"
+        id="timeRange"
+        name="timeRange"
+        min="15"
+        max="600"
+        value="15"
+      />
+      <br />
+      <button onclick="startGame()">Start Game</button>
+      <br />
+      <div id="game" style="display: inline"></div>
+      <div id="result"></div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
