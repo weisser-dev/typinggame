@@ -189,13 +189,14 @@ function endGame() {
   modalContent.appendChild(modalFooter);
 
   // Create modal overlay and add modal content
+
   const modalOverlay = document.createElement("div");
   modalOverlay.classList.add("modal-overlay");
   modalOverlay.appendChild(modalContent);
-  document.body.appendChild(modalOverlay);
+  //document.body.appendChild(modalOverlay);
 }
 
 function closeModal() {
   const modalOverlay = document.querySelector(".modal-overlay");
-  document.body.removeChild(modalOverlay);
+  //document.body.removeChild(modalOverlay);
 }
